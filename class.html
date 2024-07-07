@@ -1,0 +1,21 @@
+<script>
+    class Person {
+        constructor(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+
+       sayHello() {
+            console.log(`Hello, my name is ${this.name}, I am ${this.age} years old. ${this.gender}`);
+       }
+    }
+
+    let person1 = new Person("Alice", 30, "female");
+    let person2 = new Person("Bob", 25, "male");
+
+    console.log(person1.name ,person1.age ,person1.gender);
+    console.log(person2.name,person2.age,person2.gender);
+    person1.sayHello();
+    person2.sayHello();
+</script>

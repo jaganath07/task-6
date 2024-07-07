@@ -1,0 +1,16 @@
+<script>
+class UberPriceCalculator {
+    constructor(baseFare, costPerMinute, costPerMile) {
+      this.baseFare = baseFare;
+      this.costPerMinute = costPerMinute;
+      this.costPerMile = costPerMile;
+    }
+  
+    calculatePrice(minutes, miles) {
+      return this.baseFare + (this.costPerMinute * minutes) + (this.costPerMile * miles);
+    }
+  }
+  
+  console.log("The trip price is " + new UberPriceCalculator(2.50, 0.20, 1.00).calculatePrice(15, 10));
+</script>
+  
